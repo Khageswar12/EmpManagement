@@ -10,6 +10,7 @@ import java.util.Optional;
 
 @Service
 public class Employeeserviceimpl implements EmployeeSrevice {
+
     private EmployeeRepository
             employeeRepository;
     public Employeeserviceimpl(EmployeeRepository employeeRepository) {
@@ -62,6 +63,11 @@ public class Employeeserviceimpl implements EmployeeSrevice {
         employeeRepository.findById(id).
                 orElseThrow(()->new ResourceNotFoundException("Employee","Id",id));
         employeeRepository.deleteById(id);
+    }
+
+    @Override
+    public void all() {
+
     }
 }
 
