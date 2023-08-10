@@ -13,6 +13,6 @@ public interface EmployeeSrevice {
 
     Employee updateEmployee(Employee employee,long id);
     void  deleteEmployee(long id);
-    void all();
+
 }
 

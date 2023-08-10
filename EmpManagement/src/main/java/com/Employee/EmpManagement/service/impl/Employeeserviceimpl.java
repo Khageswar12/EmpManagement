@@ -65,9 +65,6 @@ public class Employeeserviceimpl implements EmployeeSrevice {
         employeeRepository.deleteById(id);
     }
 
-    @Override
-    public void all() {
 
-    }
 }
 
